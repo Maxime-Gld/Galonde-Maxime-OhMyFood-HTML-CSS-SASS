@@ -3,12 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/63e7ed121c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobilefirt.css">
     <link rel="stylesheet" href="css/tablette.css">
     <link rel="stylesheet" href="css/desktop.css">
     <title>OhMyfood! - réservation en ligne</title>
 </head>
 <body>
-    
+
+<!---------------- header -------------------->
+
+
+    <header>
+        <img src="images/logo/ohmyfood.png" alt="logo">
+    </header>
+<!-------------- partie localisation ------------------->
+    <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <form action="traitement.php" method="post">
+            <input type="search" name="search" placeholder="Paris, Belleville" />
+        </form>
+    </div>
+<!-------------------- en-tete ------------->
+    <section class="home ">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos</p>
+        <div class="btn btn--round btn--pinkpurple">
+            <a href="#"><p>Explorer nos restaurants</p></a>
+        </div>
+    </section>
+
+    <main>
+<!-------------------- partie fonctionnement ----------------->
+        <section class="navigation">
+            <h2>Fonctionnement</h2>
+            <div class="btn btn--radius">
+                <div class="number">1</div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="btn btn--radius">
+                <div class="number">2</div>
+                <i class="fa-solid fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="btn btn--radius">
+                <div class="number">3</div>
+                <i class="fa-solid fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+<!--------------- partie restaurant ------------------->
+        <section class="restaurant">
+            <h2>Restaurant</h2>
+
+            <article class="card">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de La palette du goût">
+                <aside class="card__description">
+                    <div class="card___name">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </aside>
+            </article>
+            <article class="card">
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de La note enchantée">
+                <aside class="card__description">
+                    <div class="card___name">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </aside>
+            </article>
+            <article class="card">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de À la française">
+                <aside class="card__description">
+                    <div class="card___name">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </aside>
+            </article>
+            <article class="card">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo du délice des sens">
+                <aside class="card__description">
+                    <div class="card___name">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </aside>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="" alt="">
+    </footer>
 </body>
 </html>
