@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet sass",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxime-Gld/P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxime-Gld/P3/issues"
+  },
+  "homepage": "https://github.com/Maxime-Gld/P3#readme"
+}
