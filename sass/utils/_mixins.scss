@@ -1,0 +1,19 @@
+@mixin card-shadow {
+    box-shadow: 0 5px 10px $color-shadow;
+}
+
+@mixin grey-back-color {
+    background-color: $lightgrey-color;
+}
+
+@mixin rounded {
+    border-radius: 100px;
+}
+
+@mixin radius {
+    border-radius: 20px;
+}
+
+@mixin container-padding {
+    padding: $size-row $size-col;
+}

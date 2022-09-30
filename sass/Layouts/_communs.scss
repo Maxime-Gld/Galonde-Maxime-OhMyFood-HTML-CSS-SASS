@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    box-shadow: 0px 3px 10px;
+    @include card-shadow;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,5 +9,33 @@ header {
         height: 60px;
         margin: auto;
         padding: 20px 0 10px 0;
+    }
+}
+
+
+footer {
+    background-color: $color-footer;
+    color: $white-color;
+    display: flex;
+    flex-direction: column;
+    @include container-padding;
+    p {
+        font-family: "Shrikhand", sans-serif;
+        color: $white-color;
+        font-size: 20px;
+    }
+    i {
+        width: 20px;
+        margin-right: 10px;
+        font-size: small;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: flex;
+        list-style-type: none;
+        color: $white-color;
+        padding-bottom: 10px;
     }
 }

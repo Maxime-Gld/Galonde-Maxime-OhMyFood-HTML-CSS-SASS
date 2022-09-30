@@ -1,0 +1,23 @@
+.btn {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 10px 15px;
+    align-items: center;
+    @include grey-back-color;
+    @include card-shadow;
+    &--round {
+        @include rounded;
+    }
+    &--radius {
+        @include radius;
+    }
+    &--pinkpurple {
+        background: linear-gradient(to bottom right, $secondary_color, $primary-color);
+        p {
+        color: $white-color;
+        font-size: 16px
+        }
+    }
+}
