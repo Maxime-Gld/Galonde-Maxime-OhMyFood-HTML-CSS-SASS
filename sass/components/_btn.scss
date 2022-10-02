@@ -1,11 +1,8 @@
 .btn {
-    width: 70%;
-    margin: auto;
     display: flex;
     justify-content: center;
+    margin: auto;
     margin: 10px 15px;
-    align-items: center;
-    @include grey-back-color;
     @include card-shadow;
     &--round {
         @include rounded;

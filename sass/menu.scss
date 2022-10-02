@@ -1,0 +1,56 @@
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/normalize";
+@import "base/base";
+
+@import "layouts/communs";
+
+@import "components/btn";
+@import "components/cards";
+
+header {
+    box-shadow: none;
+    i {
+    margin-left: 20px;
+    font-size: 20px;
+    }
+}
+
+.card {
+    flex-direction: column;  
+    img {
+        height: 100%;
+        object-position: 50% 100%;
+    }
+    &__description {
+        border-radius: 25px 25px 0 0;
+        margin-top: -15%;
+        @include grey-back-color;
+    }
+    h1 {
+        font-family: "shrikhand";
+        font-size: 30px;
+    }
+}
+
+main {
+    @include grey-back-color;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    @include container-padding;
+}
+
+.btn {
+    flex-direction: column;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
