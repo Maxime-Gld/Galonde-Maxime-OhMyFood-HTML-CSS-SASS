@@ -314,6 +314,8 @@ template {
 
 a {
   text-decoration: none;
+  display: flex;
+  color: inherit;
 }
 
 header {
@@ -427,14 +429,25 @@ footer li {
   padding: 10px 30px;
 }
 
+.card {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #CCCCCC;
+}
+.card img {
+  object-position: 50% 60%;
+}
+
 .btn {
   width: 70%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  margin: 10px 15px;
   align-items: center;
   background-color: #F6F6F6;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 10px 15px;
   box-shadow: 0 5px 10px #CCCCCC;
 }
 .btn--round {
@@ -452,21 +465,24 @@ footer li {
 }
 
 .card {
-  border-radius: 20px;
-  box-shadow: 0 5px 10px #CCCCCC;
   display: flex;
-  flex-direction: column;
   overflow: hidden;
   height: 250px;
   margin-bottom: 20px;
 }
+.card a {
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
 .card img {
   object-fit: cover;
   width: auto;
-  height: 65%;
+  height: 70%;
 }
 .card__description {
-  height: 35%;
+  height: 30%;
   padding: 10px 30px;
   display: flex;
   align-items: center;

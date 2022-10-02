@@ -67,3 +67,17 @@
     @include grey-back-color;
     @include container-padding;
 }
+
+.card {
+    @include radius;
+    @include card-shadow;
+    img {
+        object-position: 50% 60%;
+    }
+}
+
+.btn {
+    width: 70%;
+    align-items: center;
+    @include grey-back-color;
+}
