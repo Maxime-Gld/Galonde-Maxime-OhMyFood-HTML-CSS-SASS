@@ -1,8 +1,6 @@
 .btn {
     display: flex;
-    justify-content: center;
     margin: auto;
-    margin: 10px 15px;
     @include card-shadow;
     &--round {
         @include rounded;
@@ -11,6 +9,7 @@
         @include radius;
     }
     &--pinkpurple {
+        justify-content: center;
         background: linear-gradient(to bottom right, $secondary_color, $primary-color);
         p {
         color: $white-color;
