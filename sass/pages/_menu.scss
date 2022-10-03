@@ -1,0 +1,77 @@
+/* partie header */
+
+header {
+    box-shadow: none;
+    i {
+    margin-left: 20px;
+    font-size: 20px;
+    }
+}
+
+/* modif card */
+
+.card {
+    flex-direction: column;  
+    img {
+        height: 100%;
+        object-position: 50% 100%;
+    }
+    &__description {
+        border-radius: 25px 25px 0 0;
+        margin-top: -15%;
+        height: 40%;
+        @include grey-back-color;
+    }
+    h1 {
+        font-family: "shrikhand", 'sans-serif';
+        font-size: 25px;
+    }
+}
+
+/* bloc main */
+main {
+    @include grey-back-color;
+    padding-bottom: 25px;
+}
+
+
+ /* bloc menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    @include container-padding;
+    h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgb(186, 186, 186);
+    }
+}
+
+.btn {
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        p {
+            margin-top: 0;
+            font-size: 13px;
+        }
+    }
+    &__price {
+        padding: 14px;
+    }
+}
+
+.btn--pinkpurple{
+    width: 50%;
+    justify-content: center;
+    margin: 10px auto;
+}

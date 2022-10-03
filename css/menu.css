@@ -361,9 +361,7 @@ footer li {
 
 .btn {
   display: flex;
-  justify-content: center;
   margin: auto;
-  margin: 10px 15px;
   box-shadow: 0 5px 10px #CCCCCC;
 }
 .btn--round {
@@ -373,6 +371,7 @@ footer li {
   border-radius: 20px;
 }
 .btn--pinkpurple {
+  justify-content: center;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .btn--pinkpurple p {
@@ -414,6 +413,7 @@ footer li {
   font-size: x-large;
 }
 
+/* partie header */
 header {
   box-shadow: none;
 }
@@ -422,6 +422,7 @@ header i {
   font-size: 20px;
 }
 
+/* modif card */
 .card {
   flex-direction: column;
 }
@@ -432,31 +433,59 @@ header i {
 .card__description {
   border-radius: 25px 25px 0 0;
   margin-top: -15%;
+  height: 40%;
   background-color: #F6F6F6;
 }
 .card h1 {
-  font-family: "shrikhand";
-  font-size: 30px;
+  font-family: "shrikhand", "sans-serif";
+  font-size: 25px;
 }
 
+/* bloc main */
 main {
   background-color: #F6F6F6;
+  padding-bottom: 25px;
 }
 
+/* bloc menu */
 .menu {
   display: flex;
   flex-direction: column;
   padding: 10px 30px;
 }
-
-.btn {
-  flex-direction: column;
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(186, 186, 186);
 }
 
-.text {
-  width: 100%;
-  display: flex;
+.btn {
+  flex-direction: row;
+  margin-bottom: 15px;
+  padding: 10px;
   justify-content: space-between;
+  align-items: flex-end;
+}
+.btn__text {
+  display: flex;
+  flex-direction: column;
+}
+.btn__text h3 {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.btn__text p {
+  margin-top: 0;
+  font-size: 13px;
+}
+.btn__price {
+  padding: 14px;
+}
+
+.btn--pinkpurple {
+  width: 50%;
+  justify-content: center;
+  margin: 10px auto;
 }
 
 /*# sourceMappingURL=menu.css.map */
