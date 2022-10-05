@@ -43,12 +43,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    .btn {
-    @include container-padding;
+    .btn { 
+        @include grey-back-color;
+        @include container-padding;
         justify-content: flex-start;
         gap: 20px;
-        width: 95%;
+        width: 90%;
         margin: 10px 15px;
+        align-items: center;
         .number {
             margin-left: -40px;
             background: $primary-color;
@@ -75,10 +77,4 @@
     img {
         object-position: 50% 60%;
     }
-}
-
-.btn {
-    width: 70%;
-    align-items: center;
-    @include grey-back-color;
 }
