@@ -14,6 +14,6 @@
     border-radius: 20px;
 }
 
-@mixin container-padding {
-    padding: $size-row $size-col;
+@mixin container-padding($size: $size-row) {
+    padding: $size $size-col;
 }
