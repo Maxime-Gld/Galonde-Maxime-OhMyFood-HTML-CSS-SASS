@@ -494,19 +494,4 @@ footer li {
   font-size: x-large;
 }
 
-@media only screen and (min-width: 768px) {
-  #restaurant {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #restaurant h2 {
-    flex-basis: 100%;
-  }
-  #restaurant .card {
-    flex-basis: 45%;
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
