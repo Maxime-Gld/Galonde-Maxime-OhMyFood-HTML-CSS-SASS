@@ -424,6 +424,7 @@ header i {
 
 /* modif card */
 .card {
+  height: 400px;
   flex-direction: column;
 }
 .card img {
@@ -432,8 +433,8 @@ header i {
 }
 .card__description {
   border-radius: 25px 25px 0 0;
-  margin-top: -15%;
-  height: 40%;
+  margin-top: -90px;
+  height: 100px;
   background-color: #F6F6F6;
 }
 .card h1 {
