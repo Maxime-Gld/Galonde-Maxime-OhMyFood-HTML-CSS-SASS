@@ -413,6 +413,13 @@ footer li {
   width: 95%;
   margin: 10px 15px;
   align-items: center;
+  font-weight: bold;
+}
+.navigation .btn:hover {
+  background: #F5EDFF;
+}
+.navigation .btn:hover i {
+  color: #9356DC;
 }
 .navigation .btn .number {
   margin-left: -40px;

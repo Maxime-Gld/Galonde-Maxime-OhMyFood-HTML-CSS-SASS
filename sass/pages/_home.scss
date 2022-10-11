@@ -51,6 +51,13 @@
         width: 95%;
         margin: 10px 15px;
         align-items: center;
+        font-weight: bold;
+        &:hover {
+            background: $hover-color;
+            i {
+                color: $primary-color;
+            }
+        }
         .number {
             margin-left: -40px;
             background: $primary-color;
