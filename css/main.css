@@ -494,6 +494,80 @@ footer li {
   font-size: x-large;
 }
 
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  font-size: 4em;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  opacity: 0%;
+  z-index: -99;
+}
+.loader__container {
+  height: 4.5em;
+  width: 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* animation */
+.loader {
+  animation: ghost 5s;
+}
+.loader__icon {
+  animation: translate-to-right 1s ease-in;
+}
+.loader__title {
+  animation: translate-to-left 1s ease-in;
+}
+.loader__container {
+  animation: rotate-loader 2s ease-out 900ms;
+}
+
+/* keyframes */
+@keyframes rotate-loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes translate-to-right {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+@keyframes translate-to-left {
+  0% {
+    transform: translateX(400px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+@keyframes ghost {
+  0%, 99% {
+    opacity: 95%;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 @media only screen and (min-width: 768px) {
   #restaurant {
     display: flex;
