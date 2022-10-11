@@ -26,7 +26,7 @@
 /* animation */
 
 .loader {
-    animation: ghost 5s;
+    animation: ghost 4300ms;
     &__icon {
     animation: translate-to-right 1s ease-in;
     }

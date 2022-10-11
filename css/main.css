@@ -506,9 +506,10 @@ span {
   position: absolute;
   background: #99E2D0;
   color: green;
+  font-weight: bold;
   top: 10px;
   right: 10px;
-  padding: 5px;
+  padding: 8px;
   font-size: 14px;
   border-radius: 5px;
 }
@@ -540,7 +541,7 @@ span {
 
 /* animation */
 .loader {
-  animation: ghost 5s;
+  animation: ghost 4300ms;
 }
 .loader__icon {
   animation: translate-to-right 1s ease-in;
