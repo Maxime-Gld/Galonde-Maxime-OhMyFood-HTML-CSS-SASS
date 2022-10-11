@@ -26,15 +26,15 @@
 /* animation */
 
 .loader {
-    animation: ghost 4300ms;
+    animation: ghost 5000ms;
     &__icon {
-    animation: translate-to-right 1s ease-in;
+    animation: translate-to-right 1500ms ease-in;
     }
     &__title {
-    animation: translate-to-left 1s ease-in;
+    animation: translate-to-left 1500ms ease-in;
     }
     &__container {
-    animation: rotate-loader 2s ease-out 900ms;
+    animation: rotate-loader 2500ms ease-out 1400ms;
     }
 }
 
