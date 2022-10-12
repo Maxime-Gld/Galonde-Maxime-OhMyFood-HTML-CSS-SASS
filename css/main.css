@@ -451,6 +451,7 @@ footer li {
 }
 
 .btn {
+  cursor: pointer;
   display: flex;
   margin: auto;
   box-shadow: 0 5px 10px #CCCCCC;

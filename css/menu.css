@@ -363,6 +363,7 @@ footer li {
 }
 
 .btn {
+  cursor: pointer;
   display: flex;
   margin: auto;
   box-shadow: 0 5px 10px #CCCCCC;
@@ -532,6 +533,14 @@ main {
   height: auto;
 }
 
+@media only screen and (min-width: 992px) {
+  .card img {
+    object-position: 100% 70%;
+  }
+  .cardcard__description {
+    width: 75%;
+  }
+}
 /* animation .btn  "check-icon"   --  menu */
 .btn:hover > .btn__check {
   transition: margin-right 1000ms ease;
