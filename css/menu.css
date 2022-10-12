@@ -537,9 +537,6 @@ main {
   .card img {
     object-position: 100% 70%;
   }
-  .cardcard__description {
-    width: 75%;
-  }
 }
 /* animation .btn  "check-icon"   --  menu */
 .btn:hover > .btn__check {
