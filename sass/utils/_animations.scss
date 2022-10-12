@@ -1,0 +1,12 @@
+/* animation .btn  "check-icon"   --  menu */
+
+.btn {
+    &:hover > &__check {
+        transition: margin-right 1000ms ease;
+        margin-right: -10px;
+        i {
+            transition: transform 700ms ease-out 200ms;
+            transform: rotate(360deg);
+        }
+    }
+}

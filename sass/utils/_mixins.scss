@@ -17,3 +17,8 @@
 @mixin container-padding($size: $size-row) {
     padding: $size $size-col;
 }
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
