@@ -26,15 +26,15 @@
 /* animation */
 
 .loader {
-    animation: ghost 5000ms;
+    animation: ghost 5700ms;
     &__icon {
-    animation: translate-to-right 1500ms ease-in;
+    animation: translate-to-right 1300ms ease-in;
     }
     &__title {
-    animation: translate-to-left 1500ms ease-in;
+    animation: translate-to-left 1300ms ease-in;
     }
     &__container {
-    animation: rotate-loader 2500ms ease-out 1400ms;
+    animation: rotate-loader 2500ms ease-out 1250ms;
     }
 }
 
@@ -75,9 +75,9 @@
 
 
 @keyframes ghost {
-    0%,99% {
-        opacity: 95%;
-        z-index: 2;
+    0%,80% {
+        opacity: 100%;
+        z-index: 99;
     }
     100% {
         opacity: 0%;
