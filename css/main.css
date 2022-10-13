@@ -356,7 +356,6 @@ footer ul {
   padding: 0;
 }
 footer li {
-  cursor: pointer;
   display: flex;
   list-style-type: none;
   color: #FFFFFF;
