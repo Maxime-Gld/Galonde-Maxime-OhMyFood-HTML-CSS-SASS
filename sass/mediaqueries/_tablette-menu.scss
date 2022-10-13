@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+
+    .card {
+        img {
+            object-position: 100% 70%;
+        }
+    }
+
+    .menu {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: -30px;
+        &__items {
+            margin-top: 10px;
+            width: 70%;
+            border-top: dashed 5px $tertiary-color;
+            padding: 20px;
+        }
+    }
+}

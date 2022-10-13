@@ -1,9 +1,23 @@
 @media only screen and (min-width: 992px) {
-
-.card {
-    img {
-        object-position: 100% 70%;
+    header {
+        margin-bottom: 0px;
+        border-bottom: 5px ridge rgb(114, 114, 118);
     }
-}
 
+    .card__description {
+        @include bloc-menu;
+         margin-top: -90px;
+    }
+
+    main {
+        background: $white-color;
+    }
+
+    .menu {
+        @include grey-back-color;
+        @include bloc-menu;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        border-radius: 0 0 20px 20px;
+    }
 }

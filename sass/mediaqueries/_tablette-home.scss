@@ -1,5 +1,29 @@
 @media only screen and (min-width: 768px) {
 
+    .home {
+        @include back-home;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        p {
+            color: white;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+        h1 {
+            flex-basis: 50%;
+        }
+        p {
+            flex-basis: 50%;
+        }
+    }
+
+
+
     #restaurant {
         display: flex;
         flex-direction: row;
