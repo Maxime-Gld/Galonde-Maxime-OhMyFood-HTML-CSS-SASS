@@ -356,6 +356,7 @@ footer ul {
   padding: 0;
 }
 footer li {
+  cursor: pointer;
   display: flex;
   list-style-type: none;
   color: #FFFFFF;
@@ -503,8 +504,31 @@ footer li {
 .card p {
   margin-top: 0;
 }
+.card input {
+  position: absolute;
+}
 .card .fa-heart {
   font-size: x-large;
+  position: absolute;
+  cursor: pointer;
+  right: 35px;
+  bottom: 35px;
+}
+.card .fa-heart:hover:before {
+  font-weight: 900;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heart-clr 500ms ease-in-out;
+}
+@keyframes heart-clr {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .new {
@@ -655,13 +679,14 @@ footer li {
   #restaurant .card {
     flex-basis: 45%;
   }
+  .btn--pinkpurple:hover {
+    transform: scale(1.1);
+    transition: transform 300ms ease;
+  }
 }
 @media only screen and (min-width: 992px) {
-  body {
-    max-width: 1440px;
-  }
   .home {
-    height: 270px;
+    height: 300px;
     box-shadow: 5px 10px 15px lightgrey;
   }
   .navigation {
@@ -683,8 +708,9 @@ footer li {
     flex-basis: 40%;
     height: 300px;
   }
-  body {
-    max-width: 1440px;
+  #restaurant .card:hover {
+    transform: scale(1.03);
+    transition: transform 300ms ease;
   }
 }
 

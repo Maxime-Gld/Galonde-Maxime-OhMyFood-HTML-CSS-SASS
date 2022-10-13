@@ -11,6 +11,7 @@
     }
 
     .card__description {
+        position: relative;
         @include bloc-menu;
          margin-top: -90px;
     }

@@ -61,4 +61,8 @@
             flex-basis: 45%;
         }
     }
+
+    .btn--pinkpurple:hover {
+        @include zoom-anim;
+    }
 }

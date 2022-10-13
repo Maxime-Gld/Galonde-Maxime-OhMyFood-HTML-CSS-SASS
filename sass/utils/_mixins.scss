@@ -2,8 +2,6 @@
     box-shadow: 5px 5px 10px $color-shadow;
 }
 
-
-
 @mixin grey-back-color {
     background: $lightgrey-color;
 }
@@ -35,4 +33,9 @@
 @mixin back-home {
     background: rgb(147,86,220);
     background: linear-gradient(48deg, rgba(147,86,220,1) 9%, rgba(255,121,218,1) 40%, rgba(255,255,255,1) 61%);
+}
+
+@mixin zoom-anim {
+    transform: scale(1.1);
+    transition: transform 300ms ease;
 }
