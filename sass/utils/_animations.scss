@@ -10,3 +10,37 @@
         }
     }
 }
+
+
+/* animation des repas */
+
+
+.slide0ms {
+    animation: slide 1000ms ease-out;
+}
+
+.slide200ms {
+    animation: slide 1000ms ease-out 200ms;
+}
+
+.slide400ms {
+    animation: slide 1000ms ease-out 400ms;
+}
+
+.slide600ms {
+    animation: slide 1000ms ease-out 600ms;
+}
+
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) ;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
