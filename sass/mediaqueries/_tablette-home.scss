@@ -1,7 +1,32 @@
 @media only screen and (min-width: 768px) {
 
+    .location {
+        position: absolute;
+        height: auto;
+        left: 10px;
+        width: 200px;
+        background: transparent;
+        .fa-location-dot {
+            @include card-shadow;
+            background: $tertiary-color;
+            height: 2em;
+            padding: 10px;
+            border-radius: 10px 0 0 10px;
+        }
+        input {
+            @include card-shadow;
+            background: white;
+            height: 2em;
+            border-radius: 0 10px 10px 0;
+        }
+        i {
+            transform: scale(1.05);
+        }
+    }
+
     .home {
         @include back-home;
+        height: 300px;
         color: black;
         display: flex;
         flex-direction: row;
