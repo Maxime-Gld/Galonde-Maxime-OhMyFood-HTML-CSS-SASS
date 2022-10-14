@@ -25,5 +25,12 @@
         transition: transform 300ms ease;
     }
 
-
+    .footer {
+        justify-content: center;
+        &__container {
+            width: 25%;
+            margin: auto;
+            align-items: center;
+        }
+    }
 }
