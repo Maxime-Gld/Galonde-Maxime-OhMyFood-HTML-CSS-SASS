@@ -682,6 +682,14 @@ footer li {
     transform: scale(1.1);
     transition: transform 300ms ease;
   }
+  .footer {
+    justify-content: center;
+  }
+  .footer__container {
+    width: 25%;
+    margin: auto;
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 992px) {
   .home {

@@ -65,4 +65,13 @@
     .btn--pinkpurple:hover {
         @include zoom-anim;
     }
+
+    .footer {
+        justify-content: center;
+        &__container {
+            width: 25%;
+            margin: auto;
+            align-items: center;
+        }
+    }
 }
