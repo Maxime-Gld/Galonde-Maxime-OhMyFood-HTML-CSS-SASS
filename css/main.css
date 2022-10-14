@@ -569,16 +569,16 @@ footer li {
 
 /* animation */
 .loader {
-  animation: ghost 5700ms;
+  animation: ghost 3000ms;
 }
 .loader__icon {
-  animation: translate-to-right 1300ms ease-in;
+  animation: translate-to-right 500ms ease-in;
 }
 .loader__title {
-  animation: translate-to-left 1300ms ease-in;
+  animation: translate-to-left 500ms ease-in;
 }
 .loader__container {
-  animation: rotate-loader 2500ms ease-out 1250ms;
+  animation: rotate-loader 1000ms ease-out 450ms;
 }
 
 /* keyframes */
@@ -587,7 +587,7 @@ footer li {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes translate-to-right {
