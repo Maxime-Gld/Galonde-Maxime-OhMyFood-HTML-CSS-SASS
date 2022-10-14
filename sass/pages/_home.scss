@@ -44,8 +44,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 30px;
     .btn { 
-        @include grey-back-color;
         @include container-padding;
         justify-content: flex-start;
         gap: 20px;
@@ -53,6 +53,7 @@
         margin: 10px 15px;
         align-items: center;
         font-weight: bold;
+        background: $white-color;
         &:hover {
             background: $hover-color;
             i {

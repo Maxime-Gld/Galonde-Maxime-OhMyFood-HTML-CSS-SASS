@@ -475,7 +475,7 @@ header i {
   border-radius: 25px 25px 0 0;
   margin-top: -90px;
   height: 100px;
-  background: #F6F6F6;
+  background: #F2F2F2;
 }
 .card h2 {
   font-family: "shrikhand", "sans-serif";
@@ -484,7 +484,7 @@ header i {
 
 /* bloc main */
 main {
-  background: #F6F6F6;
+  background: #F2F2F2;
   padding-bottom: 25px;
 }
 
@@ -515,6 +515,7 @@ main {
   padding: 10px;
   align-items: center;
   overflow: hidden;
+  background: #FFFFFF;
 }
 .btn__text {
   display: flex;
@@ -536,7 +537,8 @@ main {
   text-overflow: ellipsis;
 }
 .btn__price {
-  padding: 25px;
+  padding-right: 20px;
+  padding-left: 5px;
 }
 .btn__check {
   display: flex;
@@ -555,6 +557,7 @@ main {
   margin: 10px auto;
   justify-content: center;
   height: auto;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
 @media only screen and (min-width: 768px) {
@@ -606,7 +609,7 @@ main {
     background: #FFFFFF;
   }
   .menu {
-    background: #F6F6F6;
+    background: #F2F2F2;
     margin: auto;
     width: 976px;
     box-shadow: 6px 6px 10px black;

@@ -380,7 +380,7 @@ footer li {
 }
 
 .home {
-  background: #F6F6F6;
+  background: #F2F2F2;
   padding: 10px 30px;
   width: 100%;
   display: flex;
@@ -408,9 +408,9 @@ footer li {
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 30px;
 }
 .navigation .btn {
-  background: #F6F6F6;
   padding: 10px 30px;
   justify-content: flex-start;
   gap: 20px;
@@ -418,6 +418,7 @@ footer li {
   margin: 10px 15px;
   align-items: center;
   font-weight: bold;
+  background: #FFFFFF;
 }
 .navigation .btn:hover {
   background: #F5EDFF;
@@ -439,7 +440,7 @@ footer li {
 }
 
 #restaurant {
-  background: #F6F6F6;
+  background: #F2F2F2;
   padding: 10px 30px;
 }
 
