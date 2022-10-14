@@ -4,12 +4,6 @@
         width: auto;
     }
 
-
-    header {
-        margin-bottom: 0px;
-        border-bottom: 5px ridge rgb(114, 114, 118);
-    }
-
     .card__description {
         position: relative;
         @include bloc-menu;

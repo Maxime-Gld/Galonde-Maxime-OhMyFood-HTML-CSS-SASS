@@ -558,6 +558,10 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: 0px;
+    border-bottom: 5px ridge rgb(114, 114, 118);
+  }
   .card img {
     object-position: 100% 70%;
   }
@@ -590,10 +594,6 @@ main {
 @media only screen and (min-width: 992px) {
   body {
     width: auto;
-  }
-  header {
-    margin-bottom: 0px;
-    border-bottom: 5px ridge rgb(114, 114, 118);
   }
   .card__description {
     position: relative;
