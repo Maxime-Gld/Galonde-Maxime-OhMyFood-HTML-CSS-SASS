@@ -629,20 +629,20 @@ main {
 }
 
 /* animation des repas */
-.slide0ms {
-  animation: slide 1000ms ease-out;
+.slide1 {
+  animation: slide 1300ms ease-in-out;
 }
 
-.slide200ms {
-  animation: slide 1000ms ease-out 200ms;
+.slide2 {
+  animation: slide 1300ms ease-in-out 100ms;
 }
 
-.slide400ms {
-  animation: slide 1000ms ease-out 400ms;
+.slide3 {
+  animation: slide 1300ms ease-in-out 200ms;
 }
 
-.slide600ms {
-  animation: slide 1000ms ease-out 600ms;
+.slide4 {
+  animation: slide 1300ms ease-in-out 300ms;
 }
 
 @keyframes slide {
