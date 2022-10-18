@@ -375,6 +375,7 @@ footer li {
   border-radius: 20px;
 }
 .btn--pinkpurple {
+  position: relative;
   padding: 20px 30px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: #FFFFFF;
@@ -383,12 +384,49 @@ footer li {
   justify-content: center;
 }
 
+/* pseudo-element btn*/
+.btn {
+  z-index: 1;
+}
+.btn--pinkpurple:hover {
+  transform: scale(1.05);
+  transition: transform 300ms ease;
+}
+.btn--pinkpurple:hover::after {
+  position: absolute;
+  content: "";
+  border-radius: 100px;
+  background: linear-gradient(to bottom, #ff88de, #9b63df);
+  box-shadow: 5px 5px 10px #b3b3b3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navigation .btn:hover::after {
+  position: absolute;
+  content: "";
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #F5EDFF;
+}
+.navigation .btn:hover:hover > i {
+  color: #9356DC;
+}
+
 .card {
   position: relative;
   display: flex;
   overflow: hidden;
   height: 250px;
   margin-bottom: 20px;
+  /* animations coeur */
 }
 .card a {
   flex-direction: column;
@@ -441,6 +479,7 @@ footer li {
   }
 }
 
+/* bloc nouveau */
 .new {
   position: absolute;
   background: #99E2D0;
@@ -643,6 +682,10 @@ main {
 
 .slide4 {
   animation: slide 1300ms ease-in-out 300ms;
+}
+
+.slide5 {
+  animation: slide 1300ms ease-in-out 400ms;
 }
 
 @keyframes slide {

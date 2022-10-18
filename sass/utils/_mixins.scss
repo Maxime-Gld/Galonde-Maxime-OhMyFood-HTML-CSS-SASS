@@ -36,6 +36,11 @@
 }
 
 @mixin zoom-anim {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 300ms ease;
+}
+
+@mixin btn-hover {
+    background: linear-gradient(to bottom, lighten($secondary_color, 3), lighten($primary-color, 3));
+    box-shadow: 5px 5px 10px darken($color-shadow, 10);
 }

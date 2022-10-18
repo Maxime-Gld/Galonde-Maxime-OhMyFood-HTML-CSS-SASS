@@ -45,7 +45,8 @@
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 30px;
-    .btn { 
+    .btn {
+        position: relative;
         @include container-padding;
         justify-content: flex-start;
         gap: 20px;
@@ -54,26 +55,21 @@
         align-items: center;
         font-weight: bold;
         background: $white-color;
-        &:hover {
-            background: $hover-color;
-            i {
-                color: $primary-color;
-            }
-        }
-        .number {
-            margin-left: -40px;
-            background: $primary-color;
-            color: $white-color;
-            padding: 3px 8px;
-            &--round {
+    }
+    .number {
+        margin-left: -40px;
+        background: $primary-color;
+        color: $white-color;
+        padding: 3px 8px;
+        &--round {
             @include rounded;
-            }
-        }
-        i {
-            color: grey;
         }
     }
+    i {
+        color: grey;
+    }
 }
+
 
 #restaurant {
     @include grey-back-color;

@@ -10,6 +10,7 @@
         @include radius;
     }
     &--pinkpurple {
+        position: relative;
         @include container-padding($size: 20px);
         background: $clr-btn;
         color: $white-color;
@@ -18,3 +19,48 @@
         justify-content: center;
     }
 }
+
+/* pseudo-element btn*/
+
+.btn {
+    z-index: 1;
+    &--pinkpurple {
+        &:hover {
+            @include zoom-anim;
+                &::after {
+                position: absolute;
+                content: "";
+                @include rounded;
+                @include btn-hover;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.navigation .btn {
+    &:hover {
+        &::after {
+        position: absolute;
+        content: "";
+        @include radius;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: $hover-color;
+        }
+    &:hover > i {
+        color: $primary-color;
+        }
+    }    
+}
+
+
+
+    
