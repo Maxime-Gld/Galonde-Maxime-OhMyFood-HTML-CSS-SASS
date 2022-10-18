@@ -31,6 +31,10 @@
     animation: slide 1300ms ease-in-out 300ms;
 }
 
+.slide5 {
+    animation: slide 1300ms ease-in-out 400ms;
+}
+
 
 
 @keyframes slide {
@@ -40,7 +44,7 @@
         transform: translateY(100px) ;
     }
 
-    100%{
+    100% {
         opacity: 100%;
         transform: translateY(0);
         z-index: 1;
