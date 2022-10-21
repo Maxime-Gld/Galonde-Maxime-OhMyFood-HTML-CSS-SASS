@@ -18,24 +18,18 @@
 .slide1 {
     animation: slide 1300ms ease-in-out;
 }
-
 .slide2 {
     animation: slide 1300ms ease-in-out 100ms;
 }
-
 .slide3 {
     animation: slide 1300ms ease-in-out 200ms;
 }
-
 .slide4 {
     animation: slide 1300ms ease-in-out 300ms;
 }
-
 .slide5 {
     animation: slide 1300ms ease-in-out 400ms;
 }
-
-
 
 @keyframes slide {
     0% {
@@ -43,7 +37,6 @@
         opacity: 0;
         transform: translateY(100px) ;
     }
-
     100% {
         opacity: 100%;
         transform: translateY(0);

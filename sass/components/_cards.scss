@@ -28,9 +28,6 @@
     p {
         margin-top: 0;
     }
-    input {
-        position: absolute;
-    }
 
     /* animations coeur */
 
@@ -42,7 +39,7 @@
         bottom: 35px;
     }
 
-    .fa-heart:hover:before {
+    .fa-heart:hover::before {
         font-weight: 900;
         background: $clr-btn;
         -webkit-background-clip: text;

@@ -537,9 +537,6 @@ footer li {
 .card p {
   margin-top: 0;
 }
-.card input {
-  position: absolute;
-}
 .card .fa-heart {
   font-size: x-large;
   position: absolute;
@@ -547,7 +544,7 @@ footer li {
   right: 35px;
   bottom: 35px;
 }
-.card .fa-heart:hover:before {
+.card .fa-heart:hover::before {
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
